@@ -4,7 +4,7 @@ import io
 import sys
 from setuptools import setup, Extension
 
-if sys.platform.startswith('win'):
+if sys.platform.startswith('win') or sys.platform.startswith('darwin'):
     compile_args = []
     link_args = []
 else:
